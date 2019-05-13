@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "NoriSte",
+      "name": "Stefano Magni",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/173663?v=4",
+      "profile": "https://twitter.com/NoriSte",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "gatsby-plugin-preconnect",
+  "projectOwner": "NoriSte",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
