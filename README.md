@@ -13,7 +13,10 @@ Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/elle
 
 ## What this plugin does
 
-It simply adds a `<link rel="preconnect" href="https://example.com">` to the page.
+It simply adds a `<link rel="preconnect" href="https://example.com">` to the page (see the
+[
+Resource Prioritization - Preconnect
+guide](https://developers.google.com/web/fundamentals/performance/resource-prioritization?utm_source=lighthouse&utm_medium=unknown#preconnect)).
 
 ## How to use
 
