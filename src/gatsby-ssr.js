@@ -22,7 +22,8 @@ export const onRenderBody = ({
   setHeadComponents(
     pluginOptions.domains.map(domain => React.createElement('link', {
       rel: "preconnect",
-      href: domain
+      href: domain,
+      key: domain
     })));
 
 }
