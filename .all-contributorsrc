@@ -14,6 +14,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "dugagjin",
+      "name": "Dugagjin Lashi",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16219574?v=4",
+      "profile": "https://dugagjin.lashi.engineer",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
