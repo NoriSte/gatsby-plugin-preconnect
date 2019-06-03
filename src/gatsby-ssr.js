@@ -15,12 +15,11 @@ export const onRenderBody = ({
     throw new Error("gatsby-plugin-preconnect: `options.domains` only accept strings");
   }
 
-  pluginOptions.domains.forEach(domain => {
-
-  });
+  // remove duplicate values
+  const domains =  Array.from(new Set(pluginOptions.domains));
 
   setHeadComponents(
-    pluginOptions.domains.map(domain => React.createElement('link', {
+    domains.map(domain => React.createElement('link', {
       rel: "preconnect",
       href: domain,
       key: domain
