@@ -15,7 +15,7 @@ Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/elle
 
 ## What this plugin does
 
-It simply adds a `<link rel="preconnect" href="https://example.com">` to the page (see the
+It simply adds a `<link rel="preconnect" href="https://example.com" crossorigin="">` to the page (see the
 [
 Resource Prioritization - Preconnect
 guide](https://developers.google.com/web/fundamentals/performance/resource-prioritization?utm_source=lighthouse&utm_medium=unknown#preconnect)).
@@ -28,7 +28,12 @@ plugins: [
   {
     resolve: 'gatsby-plugin-preconnect',
     options: {
-      domains: ['https://foo.com', 'https://bar.com'],
+      domains: [
+        'https://foo.com',
+        'https://bar.com',
+        { domain: 'https://corswithcreds.com', crossOrigin: 'use-credentials' },
+        { domain: 'https://disablecors.com', crossOrigin: false },
+      ],
     },
   },
 ]
