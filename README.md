@@ -26,14 +26,11 @@ guide](https://developers.google.com/web/fundamentals/performance/resource-prior
 // In your gatsby-config.js
 plugins: [
   {
-    resolve: "gatsby-plugin-preconnect",
+    resolve: 'gatsby-plugin-preconnect',
     options: {
-      domains: [
-        "https://foo.com",
-        "https://bar.com"
-      ]
-    }
-  }
+      domains: ['https://foo.com', 'https://bar.com'],
+    },
+  },
 ]
 ```
 
@@ -52,7 +49,19 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://twitter.com/NoriSte"><img src="https://avatars0.githubusercontent.com/u/173663?v=4" width="100px;" alt="Stefano Magni"/><br /><sub><b>Stefano Magni</b></sub></a><br /><a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=NoriSte" title="Code">💻</a> <a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=NoriSte" title="Documentation">📖</a> <a href="#review-dugagjin" title="Reviewed Pull Requests">👀</a></td><td align="center"><a href="https://dugagjin.lashi.engineer"><img src="https://avatars2.githubusercontent.com/u/16219574?v=4" width="100px;" alt="Dugagjin Lashi"/><br /><sub><b>Dugagjin Lashi</b></sub></a><br /><a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=dugagjin" title="Code">💻</a></td></tr></table>
+<table>
+    <tr>
+        <td align="center">
+            <a href="https://twitter.com/NoriSte"><img src="https://avatars0.githubusercontent.com/u/173663?v=4" width="100px;" alt="Stefano Magni" />
+                <br /><sub><b>Stefano Magni</b></sub></a>
+            <br /><a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=NoriSte" title="Code">💻</a> <a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=NoriSte" title="Documentation">📖</a> <a href="#review-dugagjin" title="Reviewed Pull Requests">👀</a></td>
+        <td align="center">
+            <a href="https://dugagjin.lashi.engineer"><img src="https://avatars2.githubusercontent.com/u/16219574?v=4" width="100px;" alt="Dugagjin Lashi" />
+                <br /><sub><b>Dugagjin Lashi</b></sub></a>
+            <br /><a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=dugagjin" title="Code">💻</a></td>
+            <td align="center"><a href="https://github.com/adonig"><img src="https://avatars2.githubusercontent.com/u/900404?v=4" width="100px;" alt=""/><br /><sub><b>Andreas Donig</b></sub></a><br /><a href="#ideas-adonig" title="Ideas, Planning, & Feedback">🤔</a></td>
+    </tr>
+</table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
