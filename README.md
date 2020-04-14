@@ -1,6 +1,6 @@
 # gatsby-plugin-preconnect
 
-Quickly add a `<link rel="preconnect">` tag for every specified domain.
+Quickly add a `<link rel="preconnect" crossorigin>` tag for every specified domain.
 
 [![Build Status](https://travis-ci.com/NoriSte/gatsby-plugin-preconnect.svg?branch=master)](https://travis-ci.com/NoriSte/gatsby-plugin-preconnect)
 [![Build Status](https://img.shields.io/badge/build%20cron-weekly-44cc11.svg)](https://travis-ci.com/NoriSte/gatsby-plugin-preconnect)
@@ -15,7 +15,7 @@ Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/elle
 
 ## What this plugin does
 
-It simply adds a `<link rel="preconnect" href="https://example.com" crossorigin="">` to the page (see the
+It simply adds a `<link rel="preconnect" href="https://example.com" crossorigin>` to the page (see the
 [
 Resource Prioritization - Preconnect
 guide](https://developers.google.com/web/fundamentals/performance/resource-prioritization?utm_source=lighthouse&utm_medium=unknown#preconnect)).
@@ -28,16 +28,41 @@ plugins: [
   {
     resolve: 'gatsby-plugin-preconnect',
     options: {
+      domains: ['https://foo.com', 'https://bar.com'],
+    },
+  },
+]
+```
+
+`crossOrigin` is set to `true` by default but it can be customized, below all the available options
+
+```js
+plugins: [
+  {
+    resolve: 'gatsby-plugin-preconnect',
+    options: {
       domains: [
         'https://foo.com',
         'https://bar.com',
-        { domain: 'https://corswithcreds.com', crossOrigin: 'use-credentials' },
+        { domain: 'https://enablecors.com', crossOrigin: true },
         { domain: 'https://disablecors.com', crossOrigin: false },
+        { domain: 'https://corswithanonymous.com', crossOrigin: 'anonymous' },
+        { domain: 'https://corswithcreds.com', crossOrigin: 'use-credentials' },
       ],
     },
   },
 ]
 ```
+
+All the available values for `crossOrigin` are listed below, every other value makes the plugin throw an error
+
+| Value               | Equivalent value      |
+| ------------------- | --------------------- |
+| `undefined`         | "anonymous"           |
+| `true`              | "anonymous"           |
+| `"anonymous"`       | "anonymous"           |
+| `"use-credentials"` | "use-credentials"     |
+| `false`             | (attribute not added) |
 
 ## Contributing
 
