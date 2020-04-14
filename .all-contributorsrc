@@ -33,6 +33,17 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "schnogz",
+      "name": "Andrew Schneider",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6364918?v=4",
+      "profile": "http://www.schnogz.com",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,
