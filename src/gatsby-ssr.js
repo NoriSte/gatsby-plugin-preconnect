@@ -1,28 +1,27 @@
-import React from "react";
+import React from 'react'
+import { parseOptions, removeDuplicates } from './utils'
 
+export const onRenderBody = ({ setHeadComponents }, pluginOptions) => {
+  const { domains: domainList } = pluginOptions
 
-export const onRenderBody = ({
-  setHeadComponents,
-}, pluginOptions) => {
-
-  if(!pluginOptions || !pluginOptions.domains) {
-    throw new Error("gatsby-plugin-preconnect: Missing `options.domains`");
-  }
-  if(!Array.isArray(pluginOptions.domains)) {
-    throw new Error("gatsby-plugin-preconnect: `options.domains` is not an array");
-  }
-  if(pluginOptions.domains.find(el => typeof el !== "string")) {
-    throw new Error("gatsby-plugin-preconnect: `options.domains` only accept strings");
+  if (!pluginOptions || !domainList) {
+    throw new Error('gatsby-plugin-preconnect: Missing `options.domains`')
   }
 
-  // remove duplicate values
-  const domains =  Array.from(new Set(pluginOptions.domains));
+  if (!Array.isArray(domainList)) {
+    throw new Error('gatsby-plugin-preconnect: `options.domains` is not an array')
+  }
+
+  const parsedDomains = removeDuplicates(parseOptions(domainList))
 
   setHeadComponents(
-    domains.map(domain => React.createElement('link', {
-      rel: "preconnect",
-      href: domain,
-      key: domain
-    })));
-
+    parsedDomains.map(({ domain, crossOrigin }) =>
+      React.createElement('link', {
+        crossOrigin: crossOrigin,
+        href: domain,
+        key: `${domain}-${crossOrigin}`,
+        rel: 'preconnect',
+      })
+    )
+  )
 }

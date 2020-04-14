@@ -35,9 +35,16 @@ module.exports = {
       options: {
         domains: [
           "https://foo.com",
-          "https://bar.com"
-        ]
-      }
-    }
+          "https://bar.com",
+          { domain: "https://enablecors.com", crossOrigin: true },
+          { domain: "https://disablecors.com", crossOrigin: false },
+          { domain: "https://corswithanonymous.com", crossOrigin: "anonymous" },
+          {
+            domain: "https://corswithcreds.com",
+            crossOrigin: "use-credentials",
+          },
+        ],
+      },
+    },
   ],
 }
