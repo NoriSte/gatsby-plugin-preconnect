@@ -24,11 +24,21 @@
         "code",
         "review"
       ]
+    },
+    {
+      "login": "seaneking",
+      "name": "Sean King",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6374876?v=4",
+      "profile": "http://tomorrowstudio.co",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "gatsby-plugin-preconnect",
   "projectOwner": "NoriSte",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
