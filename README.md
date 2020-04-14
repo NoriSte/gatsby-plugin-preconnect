@@ -48,21 +48,18 @@ PR or issues are welcome 👋
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
-    <tr>
-        <td align="center">
-            <a href="https://twitter.com/NoriSte"><img src="https://avatars0.githubusercontent.com/u/173663?v=4" width="100px;" alt="Stefano Magni" />
-                <br /><sub><b>Stefano Magni</b></sub></a>
-            <br /><a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=NoriSte" title="Code">💻</a> <a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=NoriSte" title="Documentation">📖</a> <a href="#review-dugagjin" title="Reviewed Pull Requests">👀</a></td>
-        <td align="center">
-            <a href="https://dugagjin.lashi.engineer"><img src="https://avatars2.githubusercontent.com/u/16219574?v=4" width="100px;" alt="Dugagjin Lashi" />
-                <br /><sub><b>Dugagjin Lashi</b></sub></a>
-            <br /><a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=dugagjin" title="Code">💻</a></td>
-            <td align="center"><a href="https://github.com/adonig"><img src="https://avatars2.githubusercontent.com/u/900404?v=4" width="100px;" alt=""/><br /><sub><b>Andreas Donig</b></sub></a><br /><a href="#ideas-adonig" title="Ideas, Planning, & Feedback">🤔</a></td>
-    </tr>
+  <tr>
+    <td align="center"><a href="https://twitter.com/NoriSte"><img src="https://avatars0.githubusercontent.com/u/173663?v=4" width="100px;" alt=""/><br /><sub><b>Stefano Magni</b></sub></a><br /><a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=NoriSte" title="Code">💻</a> <a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=NoriSte" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://dugagjin.lashi.engineer"><img src="https://avatars2.githubusercontent.com/u/16219574?v=4" width="100px;" alt=""/><br /><sub><b>Dugagjin Lashi</b></sub></a><br /><a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=dugagjin" title="Code">💻</a> <a href="https://github.com/NoriSte/gatsby-plugin-preconnect/pulls?q=is%3Apr+reviewed-by%3Adugagjin" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="http://www.schnogz.com"><img src="https://avatars0.githubusercontent.com/u/6364918?v=4" width="100px;" alt=""/><br /><sub><b>Andrew Schneider</b></sub></a><br /><a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=schnogz" title="Code">💻</a> <a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=schnogz" title="Documentation">📖</a> <a href="https://github.com/NoriSte/gatsby-plugin-preconnect/commits?author=schnogz" title="Tests">⚠️</a></td>
+  </tr>
 </table>
 
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
