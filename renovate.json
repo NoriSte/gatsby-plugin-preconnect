@@ -1,9 +1,6 @@
 {
-  "extends": ["config:base"],
-  "packageRules": [
-    {
-      "updateTypes": ["major", "minor"],
-      "automerge": true
-    }
-  ]
+  "extends": [
+    "config:base"
+  ],
+  "automerge": true
 }
