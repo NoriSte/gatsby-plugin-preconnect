@@ -19,7 +19,7 @@
     "babel-preset-gatsby-package": "0.5.3",
     "cross-env": "7.0.2",
     "cz-conventional-changelog": "3.3.0",
-    "semantic-release": "17.2.0"
+    "semantic-release": "17.2.1"
   },
   "config": {
     "commitizen": {
