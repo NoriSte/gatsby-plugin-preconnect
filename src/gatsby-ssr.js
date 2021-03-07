@@ -17,7 +17,7 @@ export const onRenderBody = ({ setHeadComponents }, pluginOptions) => {
   setHeadComponents(
     parsedDomains.map(({ domain, crossOrigin }) =>
       React.createElement('link', {
-        crossOrigin: crossOrigin,
+        crossOrigin: crossOrigin ? crossOrigin : undefined,
         href: domain,
         key: `${domain}-${crossOrigin}`,
         rel: 'preconnect',
