@@ -20,7 +20,8 @@ export const parseOptions = (domainOptions) => {
       )
     }
 
-    crossOrigin = crossOrigin === true ? '' : crossOrigin
+    if(crossOrigin === true) crossOrigin = ''
+    if(crossOrigin === false) crossOrigin = undefined
 
     return { domain, crossOrigin }
   })
