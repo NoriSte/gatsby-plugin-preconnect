@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-preconnect",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Gatsby plugin to add the crossorigin attribute to every <link rel=\"preload\"> tag",
   "main": "index.js",
   "keywords": [
