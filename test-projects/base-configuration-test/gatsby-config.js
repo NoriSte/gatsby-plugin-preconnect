@@ -6,5 +6,12 @@ module.exports = {
     title: `base-configuration-test`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-preconnect',
+      options: {
+        domains: ['https://foo.com', 'https://bar.com'],
+      },
+    },
+  ],
 }

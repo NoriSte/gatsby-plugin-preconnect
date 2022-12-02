@@ -12,11 +12,21 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "cy:open": "cypress open",
+    "plugin:link": "rm -f ./node_modules/gatsby-plugin-preconnect && ln -s ../../../ ./node_modules/gatsby-plugin-preconnect",
+    "plugin:copy": "mkdir -p plugins/gatsby-plugin-preconnect && \\cp ../../{gatsby-ssr.js,package.json} plugins/gatsby-plugin-preconnect/",
+    "test": "npm install && npm run plugin:link && npm run build && npm run cy:start-server-and-test",
+    "cy:start-server-and-test": "npx start-server-and-test serve :9000 cy:run",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "gatsby": "^5.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "start-server-and-test": "1.12.0",
+    "cypress": "6.4.0"
   }
 }
